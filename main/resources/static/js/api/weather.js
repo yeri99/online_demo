@@ -40,7 +40,7 @@ const getWeatherInfo = () => {
 	 
 	
 	//const apiKey = $('#weatherKey').val();
-	const apiKey = "b0XkqC0DWFKbqYU9UnLMfacsu%2FW%2F9wHRhCXdNnum26q8zNhO2ywJSfPkpka%2BnxFsVfEZxHoKWCZRqHGM7z%2BYcQ%3D%3D";
+	const apiKey = "";
 	const curentUrl = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=${apiKey}&numOfRows=10&pageNo=1&base_date=${dateStr}&base_time=${timeStr}&nx=${locX}&ny=${locY}&dataType=JSON`;
 	const foreUrl = `http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=${apiKey}&numOfRows=1000&pageNo=1&base_date=${dateStr}&base_time=0200&nx=${locX}&ny=${locY}&dataType=JSON`;
  
