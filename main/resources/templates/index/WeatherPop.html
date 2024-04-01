@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/layout}">
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link th:href="@{/css/popUp/MoreWeather.css}" rel="stylesheet" />
+	</head>
+	<body layout:fragment="content">
+		<div class="header-container">날씨</div>
+		<div layout:fragment="main-container" id="main-container">
+			<div>
+				<div id="weather-container">
+					<div id="local-info"><p>대구광역시 중구 대봉동</p></div>
+						<div class="current-box dis-center">
+							<div class="date-icon" id="date-icon"></div>
+							<div class="dis-col current-long">
+								<div class="dis-row"><p id="current-date">날짜</p></div>
+								<div class="dis-row"><p id="current-temp"></p>°C
+									<p id="current-minmax">최저</p><p id="current-min" style="color: blue;"></p><p id="current-minmax">/ 최고</p><p id="current-max" style="color: red;"></p>
+								</div>
+							</div>
+							<div class="dis-col">
+								<div class="dis-row"><p id="current-pop"></p>%</div>
+								<div class="dis-row"><p style="font-size:14px;">습도</p><p id="current-hum"></p>%</div>
+							</div>
+						</div>
+					</div>
+				<div class="table-box dis-center">
+					<table id="fore-table">
+						<tr><th>6시</th><th>9시</th><th>12시</th><th>15시</th><th>18시</th><th>21시</th></tr>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" th:src="@{/js/api/moreWeather.js}"></script>
+	</body>
+	
+</html>

@@ -1,0 +1,23 @@
+@charset "EUC-KR";
+
+body{ width: 100vw; height: 100vh; display: grid; grid-template-columns: 170px 1fr; grid-template-rows: 50px 1fr 30px; margin: 0; padding: 0; }
+footer{ grid-row: 3; }
+header{ display: flex; align-items:center; justify-content:center; }
+
+.dis-center{ display: flex; align-items:center; justify-content:center; }
+.dis-item{  width: 100%;display: flex; align-items:center; justify-content:start; }
+
+.menu-container{ grid-column: 1; grid-row: 2; }
+
+.navbar-nav{ padding: 0; margin: 0; }
+
+.dropdown{ position: relative; height: 50px; display: flex; align-items:center; justify-content:center; }
+.dropdown:hover{ background-color: lightgray; cursor: pointer; }
+
+a{ height: 100%; text-decoration-line: none; color: gray; }
+li{ list-style: none; height: 40px; display: flex; align-items: center; }
+
+.dropdown-menu{ width: 150px; height: 150px; position: absolute; top: 0px; left: 170px; background-color: white; border: 1px gray solid; padding: 10px; display: none; }
+.dropdown-item{ padding-left: 10px; }
+.dropdown-item:hover{ background-color: lightgray; cursor: pointer; }
+.show{ display: block; }

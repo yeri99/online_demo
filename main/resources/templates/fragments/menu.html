@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head><meta charset="UTF-8"></head>
+	<div th:fragment="menuFragment" class="menu-container">
+		<nav class="navbar">
+			<ul class="navbar-nav" id="menu">
+				<li class="nav-item dropdown">
+					<a class="nav-link dis-center" href="#">menu1 ></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a class="dis-item" th:href="@{/salesStatus}">매출 현황</a></li>
+						<li class="dropdown-item"><a class="dis-item">second menu</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dis-center" href="#">menu2 ></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a class="dis-item" th:href="@{/moreWeather}">first menu</a></li>
+						<li class="dropdown-item"><a class="dis-item">second menu</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dis-center" href="#">menu3 ></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item"><a class="dis-item" th:href="@{/moreWeather}">first menu</a></li>
+						<li class="dropdown-item"><a class="dis-item">second menu</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</html>

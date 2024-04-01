@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html th:fragment="layout (title, menubar, content)"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<head>
+		<meta charset="UTF-8">
+		<title>DEBEC</title>
+		<th:block th:replace="~{fragments/config::configFragment}"></th:block>
+	</head>
+	<header th:replace="~{fragments/header::headerFragment}"></header>
+	<div th:replace="~{fragments/menu::menuFragment}"></div>
+	<body layout:fragment="content">
+		
+		
+		<div layout:fragment="main-container" id="main-container">
+		
+		</div>
+			
+	</body>
+	
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/menu.js}"></script>
+	<footer th:replace="~{fragments/footer::footerFragment}"></footer>
+</html>

@@ -1,0 +1,21 @@
+@charset "EUC-KR";
+
+.main-container{ height: 600px; }
+
+.sub-container{ height: 40%; }
+
+#top-container{ height: 50%; }
+#under-container{ display: grid; grid-template-columns: 430px 480px 480px; place-items: center; }
+
+.table{ height: 80%; border: 1px solid gray;  margin: 10px; }
+#table{ width: 600px; }
+#sub-table{ width: 300px; }
+
+#news-container{ width: 380px; height: 300px;  margin: 10px; }
+.news-slick{ width: 380px; height: 300px; margin: 10px; position: relative; }
+.slick-item{ width: 380px; height: 265px; }
+.slick-dots{ display: flex; justify-content: center; padding: 0; margin: 0; }
+.slick-dots button{ margin: 0 5px; border: 0; border-radius: 15px; padding: 5px; transition: padding 0.5s; }
+.slick-arrow{ width: 30px; height: 60px; border: 0; background-color: transparent; position: absolute; z-index: 1; }
+.slick-prev{ background-image: url("../image/icon/btn-pre4.png"); left: 0; top: 110px; }
+.slick-next{ background-image: url("../image/icon/btn-nxt4.png"); right: 0; top: 110px; }
