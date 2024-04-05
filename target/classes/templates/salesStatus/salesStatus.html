@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/layout}">
+	<head>
+		<meta charset="UTF-8">
+		<title>DEBEC</title>
+		<link th:href="@{/css/SalesStatus.css}" rel="stylesheet" />
+	</head>
+	<body layout:fragment="content">
+		<div>
+			날짜
+		</div>
+		<div layout:fragment="main-container" id="main-container">
+			<div class="sales-grid">
+				<div class="sales-container">1</div>
+				<div class="sales-container">2</div>
+				<div class="sales-container">3</div>
+				<div class="sales-container">4</div>
+				<div class="sales-container">5</div>
+				<div class="sales-container">6</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
